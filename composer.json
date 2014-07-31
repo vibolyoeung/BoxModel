@@ -20,13 +20,10 @@
 		"composer/installers": "*",
 		"typo3cms/we_default": "master",
 		"typo3cms/fluidcontent": "4.0.0",
-		"typo3cms/fluidcontent_bootstrap": "3.0.0",
 		"typo3cms/fluidpages": "3.0.0",
 		"typo3cms/flux": "7.0.0",
 		"typo3cms/vhs": "1.8.5",
-		"typo3cms/realurl": "1.12.8",
-	},
-	"require-dev": {
+		"typo3cms/realurl": "1.12.8"
 	},
 	"repositories": [
 		{
@@ -52,19 +49,6 @@
 					"url": "https://github.com/FluidTYPO3/fluidcontent.git",
 					"type": "git",
 					"reference": "4.0.0"
-				}
-			}
-		},
-		{
-			"type": "package",
-			"package": {
-				"name": "typo3cms/fluidcontent_bootstrap",
-				"version": "3.0.0",
-				"type": "typo3-cms-extension",
-				"source": {
-					"url": "https://github.com/FluidTYPO3/fluidcontent_bootstrap.git",
-					"type": "git",
-					"reference": "3.0.0"
 				}
 			}
 		},
