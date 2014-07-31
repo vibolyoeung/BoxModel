@@ -1,0 +1,188 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "975385279b1751a7f3486ec1ca0d8fbc",
+    "packages": [
+        {
+            "name": "composer/installers",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/installers.git",
+                "reference": "41cf781ed1271e25bf31b715416a349996aa2527"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/installers/zipball/41cf781ed1271e25bf31b715416a349996aa2527",
+                "reference": "41cf781ed1271e25bf31b715416a349996aa2527",
+                "shasum": ""
+            },
+            "replace": {
+                "roundcube/plugin-installer": "*",
+                "shama/baton": "*"
+            },
+            "require-dev": {
+                "composer/composer": "1.0.*@dev",
+                "phpunit/phpunit": "4.1.*"
+            },
+            "type": "composer-installer",
+            "extra": {
+                "class": "Composer\\Installers\\Installer",
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Composer\\Installers\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle Robinson Young",
+                    "email": "kyle@dontkry.com",
+                    "homepage": "https://github.com/shama"
+                }
+            ],
+            "description": "A multi-framework Composer library installer",
+            "homepage": "http://composer.github.com/installers/",
+            "keywords": [
+                "Craft",
+                "Dolibarr",
+                "Hurad",
+                "MODX Evo",
+                "OXID",
+                "WolfCMS",
+                "agl",
+                "annotatecms",
+                "bitrix",
+                "cakephp",
+                "chef",
+                "codeigniter",
+                "concrete5",
+                "croogo",
+                "drupal",
+                "elgg",
+                "fuelphp",
+                "installer",
+                "joomla",
+                "kohana",
+                "laravel",
+                "lithium",
+                "magento",
+                "mako",
+                "mediawiki",
+                "modulework",
+                "moodle",
+                "phpbb",
+                "piwik",
+                "ppi",
+                "puppet",
+                "roundcube",
+                "shopware",
+                "silverstripe",
+                "symfony",
+                "typo3",
+                "wordpress",
+                "zend",
+                "zikula"
+            ],
+            "time": "2014-07-22 17:04:15"
+        },
+        {
+            "name": "typo3cms/fluidcontent",
+            "version": "4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FluidTYPO3/fluidcontent.git",
+                "reference": "4.0.0"
+            },
+            "type": "typo3-cms-extension"
+        },
+        {
+            "name": "typo3cms/fluidcontent_bootstrap",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FluidTYPO3/fluidcontent_bootstrap.git",
+                "reference": "3.0.0"
+            },
+            "type": "typo3-cms-extension"
+        },
+        {
+            "name": "typo3cms/fluidpages",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FluidTYPO3/fluidpages.git",
+                "reference": "3.0.0"
+            },
+            "type": "typo3-cms-extension"
+        },
+        {
+            "name": "typo3cms/flux",
+            "version": "7.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FluidTYPO3/flux.git",
+                "reference": "7.0.0"
+            },
+            "type": "typo3-cms-extension"
+        },
+        {
+            "name": "typo3cms/realurl",
+            "version": "1.12.8",
+            "source": {
+                "type": "git",
+                "url": "git://git.typo3.org/TYPO3CMS/Extensions/realurl.git",
+                "reference": "1_12_8"
+            },
+            "type": "typo3-cms-extension"
+        },
+        {
+            "name": "typo3cms/vhs",
+            "version": "1.8.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FluidTYPO3/vhs.git",
+                "reference": "1.8.5"
+            },
+            "type": "typo3-cms-extension"
+        },
+        {
+            "name": "typo3cms/we_default",
+            "version": "master",
+            "source": {
+                "type": "git",
+                "url": "git@git.web-essentials.asia:sengchheang/we_default.git",
+                "reference": "master"
+            },
+            "type": "typo3-cms-extension",
+            "time": "2014-07-29 01:16:14"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "dev",
+    "stability-flags": [
+
+    ],
+    "prefer-stable": false,
+    "platform": {
+        "php": ">=5.3.7"
+    },
+    "platform-dev": [
+
+    ]
+}
