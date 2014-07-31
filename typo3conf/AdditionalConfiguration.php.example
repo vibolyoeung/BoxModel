@@ -1,0 +1,55 @@
+<?php
+
+if (! defined ('TYPO3_MODE')) {
+	die ('Access denied.');
+}
+
+## Realurl configuration
+@include(PATH_typo3conf . 'realurlconf.php');
+
+## Database connection
+$GLOBALS['TYPO3_CONF_VARS']['DB']['database'] = 'CHANGEME'; // Your database name, e.g: local-luvwise
+$GLOBALS['TYPO3_CONF_VARS']['DB']['host']     = 'CHANGEME'; // Your database host, e.g: localhost
+$GLOBALS['TYPO3_CONF_VARS']['DB']['password'] = 'CHANGEME'; // Your database password, e.g: ess:3
+$GLOBALS['TYPO3_CONF_VARS']['DB']['username'] = 'CHANGEME'; // Your database username, e.g: root
+
+## Reset sitename to your system
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['sitename'] = 'Boxmodel - Local System';
+
+## Install Tool password is '12345'
+$GLOBALS['TYPO3_CONF_VARS']['BE']['installToolPassword'] = '827ccb0eea8a706c4c34a16891f84e7b';
+
+## Enable phpmyadmin extension in your development system
+## Make sure you add the extension directory manually in typo3conf/ext/ or run composer update with dev
+## Settings might change according to the version you are using
+//$GLOBALS['TYPO3_CONF_VARS']['EXT']['extListArray'][] = 'phpmyadmin';
+//$GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['phpmyadmin'] = 'a:4:{s:12:"hideOtherDBs";s:1:"1";s:9:"uploadDir";s:21:"uploads/tx_phpmyadmin";s:10:"allowedIps";s:0:"";s:12:"useDevIpMask";s:1:"0";}';
+
+## Enable extension_builder extension in your development system
+## Make sure you add the extension directory manually in typo3conf/ext/ or run composer update with dev
+## Settings might change according to the version you are using
+//$GLOBALS['TYPO3_CONF_VARS']['EXT']['extListArray'][] = 'extension_builder';
+//$GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['extension_builder'] = 'a:3:{s:15:"enableRoundtrip";s:0:"";s:15:"backupExtension";s:1:"1";s:9:"backupDir";s:35:"uploads/tx_extensionbuilder/backups";}';
+
+## Enable phpunit extension in your development system
+## Make sure you add the extension directory manually in typo3conf/ext/ or run composer update with dev
+## Settings might change according to the version you are using
+//$GLOBALS['TYPO3_CONF_VARS']['EXT']['extListArray'][] = 'phpunit';
+//$GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['phpunit'] = 'a:6:{s:17:"excludeextensions";s:8:"lib, div";s:10:"phpunitlib";s:0:"";s:13:"selenium_host";s:9:"localhost";s:13:"selenium_port";s:4:"4444";s:16:"selenium_browser";s:8:"*firefox";s:19:"selenium_browserurl";s:0:"";}';
+
+## If you want to disable css/jss merging so you can debug css file easily, uncomment the following line
+//$GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['we_default'] = 'a:12:{s:19:"enableDeveloperMode";s:1:"1";s:25:"enableDefaultPageTSconfig";s:1:"1";s:25:"enableDefaultUserTSconfig";s:1:"1";s:18:"enableMinimizedRTE";s:1:"1";s:24:"disableTsTemplateEditing";s:1:"1";s:15:"dontCompressCss";s:1:"1";s:14:"dontCompressJs";s:1:"1";s:18:"dontConcatenateCss";s:1:"1";s:17:"dontConcatenateJs";s:1:"1";s:28:"dontMoveJsFromHeaderToFooter";s:1:"1";s:18:"beCompressionLevel";s:1:"9";s:18:"feCompressionLevel";s:1:"9";}';
+
+## Overwrite php executable path for crawler extension (normally it is "/usr/bin/php" in your local machine and "/opt/php54/bin/php" on joel server)
+//$GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['crawler'] = 'a:15:{s:9:"sleepTime";s:4:"1000";s:16:"sleepAfterFinish";s:2:"10";s:11:"countInARun";s:3:"100";s:14:"purgeQueueDays";s:2:"14";s:12:"processLimit";s:1:"1";s:17:"processMaxRunTime";s:3:"300";s:14:"maxCompileUrls";s:5:"10000";s:12:"processDebug";s:1:"0";s:16:"crawlHiddenPages";s:1:"0";s:7:"phpPath";s:18:"/usr/bin/php";s:14:"enableTimeslot";s:1:"1";s:11:"logFileName";s:0:"";s:9:"follow30x";s:1:"0";s:18:"makeDirectRequests";s:1:"0";s:16:"frontendBasePath";s:1:"/";}';
+
+## Debug settings - Development system only
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['context'] = 'Development'; // Development || Production
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['displayErrors'] = '1';
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['enableDeprecationLog'] = 'file';
+$GLOBALS['TYPO3_CONF_VARS']['EXT']['extCache'] = '0';
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['sqlDebug'] = '1';
+$GLOBALS['TYPO3_CONF_VARS']['FE']['debug'] = '1';
+$GLOBALS['TYPO3_CONF_VARS']['BE']['sessionTimeout'] = '60000';
+
+?>
