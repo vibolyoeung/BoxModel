@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'we_default'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="domain_typoscript_configuration">Additional Domain Configuration (Multiple Pagetree Only)</label>
+			<label index="select_domain">...</label>
+			<label index="pagetype.dropdown">Dropdown</label>
+			<label index="hide_pagetitle">Hide Page Title</label>
+			<label index="hide_pagetitle_subpage">Hide Page Title Subpage</label>
+			<label index="hide_pagetitle_yes">Yes</label>
+			<label index="hide_pagetitle_no">No</label>
+		</languageKey>
+	</data>
+</T3locallang>

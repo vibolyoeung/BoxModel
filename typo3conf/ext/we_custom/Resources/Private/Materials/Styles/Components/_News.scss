@@ -1,0 +1,14 @@
+.news {
+	&.news-single {
+		.article {
+			.news-related {
+
+				@include mobile {
+					display: block;
+					padding: 5px;
+					width: 100%;
+				}
+			}
+		}
+	}
+}

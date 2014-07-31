@@ -1,0 +1,39 @@
+body {
+	padding-top: 60px;
+	padding-bottom: 20px;
+
+	header {
+		#search-box {
+			.navbar-form {
+				@media (max-width: $screen-xs-max) {
+					margin-top: 0;
+				}
+				@media (min-width: $screen-sm-min) {
+					margin-left: 15px;
+				}
+			}
+
+			#search_field {
+				display: inline;
+				width: 70%;
+			}
+		}
+	}
+
+	footer {
+
+		.list-inline {
+			margin: 10px 0;
+		}
+
+		.row {
+			background-color: #ebebeb;
+			border-color: #ebebeb;
+			margin-bottom: 2px;
+
+			.copyright {
+				margin-top: 10px;
+			}
+		}
+	}
+}

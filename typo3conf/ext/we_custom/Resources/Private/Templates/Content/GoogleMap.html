@@ -1,0 +1,52 @@
+{namespace flux=Tx_Flux_ViewHelpers}
+{namespace v=Tx_Vhs_ViewHelpers}
+<f:layout name="Content" />
+<div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:flux="http://fedext.net/ns/flux/ViewHelpers"
+     xmlns:v="http://fedext.net/ns/vhs/ViewHelpers"
+     xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+
+	<f:section name="Configuration">
+	<flux:flexform wizardTab="Boxmodel" id="google_map" icon="{v:extension.path.resources(path: 'Images/Icons/Google-Maps-icon.png')}">
+		<flux:flexform.field.input name="defaultZoomLevel" default="8" eval="trim,required"/>
+		<flux:flexform.field.input name="mapHeight" default="400" eval="trim,required"/>
+		<flux:flexform.field.input name="defaultMapCenter" default="12.758232,104.699707" eval="trim,required"/>
+		<flux:flexform.field.checkbox name="setCenterToFirstItem"/>
+		<flux:flexform.section name="columns">
+			<flux:flexform.object name="column">
+				<flux:flexform.field.input name="latitudeLongitude" eval="trim,required"/>
+				<flux:flexform.field.input name="zoomlevel" eval="trim"/>
+				<flux:flexform.field.text name="contact" enableRichText="TRUE"/>
+			</flux:flexform.object>
+		</flux:flexform.section>
+	</flux:flexform>
+</f:section>
+
+<f:section name="Preview">
+	<strong>Latitude and Longitude</strong>: {latitudeLongitude}<br>
+	<strong>Contact</strong>: {contact}<br>
+</f:section>
+
+<f:section name="Main">
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+	<div class="text-center">
+		<div id="locations-list" class="hidden">
+			<input type="text" id="defaultZoomlevel" value="{defaultZoomLevel}"/>
+			<input type="text" id="defaultMapCenter" value="{defaultMapCenter}"/>
+			<input type="text" id="setCenterToFirstItem" value="{setCenterToFirstItem}"/>
+			<f:if condition="{v:if.type.isArray(then: 1, else: 0, value: columns)}">
+				<f:for each="{columns}" as="sectionObject" iteration="iteration">
+					<div class="location-item">
+						<input type="text" class="latlng" value="{sectionObject.column.latitudeLongitude}"/>
+						<input type="text" class="zoomlevel" value="{sectionObject.column.zoomlevel}"/>
+						<div class='contact'>
+							<f:format.html>{sectionObject.column.contact}</f:format.html>
+						</div>
+					</div>
+				</f:for>
+			</f:if>
+		</div>
+		<div id="map-canvas" style="height: {mapHeight}px"></div>
+	</div>
+</f:section>
+</div>

@@ -1,0 +1,265 @@
+{
+	"name": "typo3cms/boxmodel",
+	"description": "TYPO3 CMS for Boxmodel website.",
+	"keywords": ["boxmodel", "we_default", "we_custom", "typo3", "cms", "web essentials"],
+	"homepage": "http://www.web-essentials.asia",
+	"license": "LGPL-3.0+",
+	"authors": [
+		{
+			"name": "Web Essentials",
+			"email": "production@web-essentials.asia",
+			"homepage": "http://www.web-essentials.asia"
+		}
+	],
+	"config": {
+		"process-timeout": 1800,
+		"vendor-dir": "~/.composer"
+	},
+	"require": {
+		"php": ">=5.3.7",
+		"composer/installers": "*",
+		"typo3cms/we_default": "master",
+		"typo3cms/fluidcontent": "4.0.0",
+		"typo3cms/fluidcontent_bootstrap": "3.0.0",
+		"typo3cms/fluidpages": "3.0.0",
+		"typo3cms/flux": "7.0.0",
+		"typo3cms/vhs": "1.8.5",
+		"typo3cms/realurl": "1.12.8",
+		"typo3cms/nc_staticfilecache": "trunk",
+		"typo3cms/tq_seo": "trunk",
+		"typo3cms/snowbabel": "master",
+		"typo3cms/crawler": "master",
+		"typo3cms/tt_address": "master",
+		"typo3cms/static_info_tables": "6.1.0",
+		"typo3cms/news": "3.0.0",
+		"typo3cms/formhandler": "trunk",
+		"typo3cms/t3colorbox": "2.4.1",
+		"typo3cms/coreapi" : "dev-trunk"
+	},
+	"require-dev": {
+	},
+	"repositories": [
+		{
+			"type": "package",
+			"package": {
+				"name": "typo3cms/we_default",
+				"version": "master",
+				"type": "typo3-cms-extension",
+				"source": {
+					"url": "git@git.web-essentials.asia:sengchheang/we_default.git",
+					"type": "git",
+					"reference": "master"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "typo3cms/fluidcontent",
+				"version": "4.0.0",
+				"type": "typo3-cms-extension",
+				"source": {
+					"url": "https://github.com/FluidTYPO3/fluidcontent.git",
+					"type": "git",
+					"reference": "4.0.0"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "typo3cms/fluidcontent_bootstrap",
+				"version": "3.0.0",
+				"type": "typo3-cms-extension",
+				"source": {
+					"url": "https://github.com/FluidTYPO3/fluidcontent_bootstrap.git",
+					"type": "git",
+					"reference": "3.0.0"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "typo3cms/fluidpages",
+				"version": "3.0.0",
+				"type": "typo3-cms-extension",
+				"source": {
+					"url": "https://github.com/FluidTYPO3/fluidpages.git",
+					"type": "git",
+					"reference": "3.0.0"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "typo3cms/flux",
+				"version": "7.0.0",
+				"type": "typo3-cms-extension",
+				"source": {
+					"url": "https://github.com/FluidTYPO3/flux.git",
+					"type": "git",
+					"reference": "7.0.0"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "typo3cms/vhs",
+				"version": "1.8.5",
+				"type": "typo3-cms-extension",
+				"source": {
+					"url": "https://github.com/FluidTYPO3/vhs.git",
+					"type": "git",
+					"reference": "1.8.5"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "typo3cms/realurl",
+				"version": "1.12.8",
+				"type": "typo3-cms-extension",
+				"source": {
+					"url": "git://git.typo3.org/TYPO3CMS/Extensions/realurl.git",
+					"type": "git",
+					"reference": "1_12_8"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "typo3cms/nc_staticfilecache",
+				"version": "trunk",
+				"type": "typo3-cms-extension",
+				"source": {
+					"url": "https://svn.typo3.org/TYPO3v4/Extensions/nc_staticfilecache/",
+					"type": "svn",
+					"reference": "trunk@84726"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "typo3cms/tq_seo",
+				"version": "trunk",
+				"type": "typo3-cms-extension",
+				"source": {
+					"url": "https://svn.typo3.org/TYPO3v4/Extensions/tq_seo/",
+					"type": "svn",
+					"reference": "trunk@84520"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "typo3cms/snowbabel",
+				"version": "master",
+				"type": "typo3-cms-extension",
+				"source": {
+					"url": "https://github.com/Sengchheang/snowbabel.git",
+					"type": "git",
+					"reference": "master"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "typo3cms/crawler",
+				"version": "master",
+				"type": "typo3-cms-extension",
+				"source": {
+					"url": "https://github.com/Sengchheang/crawler.git",
+					"type": "git",
+					"reference": "master"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "typo3cms/tt_address",
+				"version": "master",
+				"type": "typo3-cms-extension",
+				"source": {
+					"url": "https://github.com/markus-k/tt_address.git",
+					"type": "git",
+					"reference": "c2edd996b742d442314f6e8a92964bef6ad3da2c"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "typo3cms/static_info_tables",
+				"version": "6.1.0",
+				"type": "typo3-cms-extension",
+				"source": {
+					"url": "https://svn.typo3.org/TYPO3v4/Extensions/static_info_tables/tags/",
+					"type": "svn",
+					"reference": "Version-6-1-0"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "typo3cms/news",
+				"version": "3.0.0",
+				"type": "typo3-cms-extension",
+				"source": {
+					"url": "git://git.typo3.org/TYPO3CMS/Extensions/news.git",
+					"type": "git",
+					"reference": "3.0.0"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "typo3cms/formhandler",
+				"version": "trunk",
+				"type": "typo3-cms-extension",
+				"source": {
+					"url": "https://svn.typo3.org/TYPO3v4/Extensions/formhandler/",
+					"type": "svn",
+					"reference": "trunk@85390"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "typo3cms/t3colorbox",
+				"version": "2.4.1",
+				"type": "typo3-cms-extension",
+				"source": {
+					"url": "https://git.web-essentials.asia/sengchheang/t3colorbox.git",
+					"type": "git",
+					"reference": "2.4.1"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "typo3cms/coreapi",
+				"version": "master",
+				"type": "typo3-cms-extension",
+				"source": {
+					"url": "https://github.com/etobi/ext-coreapi.git",
+					"type": "git",
+					"reference": "3a83c87a750b2bcf5e862adbd9f00ebd7c24c054"
+				}
+			}
+		}
+	],
+	"minimum-stability": "dev"
+}

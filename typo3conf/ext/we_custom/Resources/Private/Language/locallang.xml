@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for the FRONTEND of the WE Custom extension</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="flux.google_map">Boxmodel: Google Map</label>
+			<label index="flux.google_map.description">Google Map with specified coordination</label>
+			<label index="flux.google_map.fields.defaultZoomLevel">Zoom Level (Integer default = 8)</label>
+			<label index="flux.google_map.fields.mapHeight">Map Height (Integer default = 400)</label>
+			<label index="flux.google_map.fields.defaultMapCenter">Default map center</label>
+			<label index="flux.google_map.fields.setCenterToFirstItem">Set center to first item</label>
+			<label index="flux.google_map.objects.column.latitudeLongitude">Latitude / longitude</label>
+			<label index="flux.google_map.objects.column.zoomlevel">Zoom level</label>
+			<label index="flux.google_map.objects.column.contact">Contact</label>
+
+
+			<label index="flux.teaser">Boxmodel: Teaser</label>
+			<label index="flux.teaser.description">Create specific Text with image</label>
+			<label index="flux.teaser.fields.header">Header</label>
+			<label index="flux.teaser.fields.image">Image</label>
+			<label index="flux.teaser.fields.text">Description</label>
+			<label index="flux.teaser.fields.linkLabel">Link Label</label>
+			<label index="flux.teaser.fields.linkTarget">Link Target</label>
+		</languageKey>
+
+		<languageKey index="km" type="array">
+		</languageKey>
+
+		<languageKey index="de" type="array">
+		</languageKey>
+	</data>
+</T3locallang>

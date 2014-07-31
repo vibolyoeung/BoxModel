@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for the FRONTEND of the WE Custom extension</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="powered_by">Web Essentials</label>
+			<label index="powered_by_link">http://www.web-essentials.asia/</label>
+			<label index="copyright_note">© ###START_YEAR###-###YEAR### Boxmodel. powered by ###POWERED_BY###</label>
+			<label index="search">Search</label>
+			<label index="sitetitle">Boxmodel</label>
+			<label index="home">Home</label>
+			<label index="sitemap">Sitemap</label>
+			<label index="contact">Contact</label>
+			<label index="whats_new">What's new</label>
+			<label index="term_and_condition">Terms and Conditions</label>
+			<label index="fag">Frequently Asked Questions (FAQ)</label>
+			<label index="help">Help</label>
+			<label index="complaints_procedure">Complaints procedure</label>
+			<label index="access_key_details">Access key details</label>
+			<label index="skip_navigation">Skip Navigation</label>
+
+			<label index="page_meta_description">Web Essentials' Boxmodel for TYPO3 integration makes your live easier.</label>
+			<label index="page_meta_keywords">Boxmodel, Web Essentials</label>
+
+			<label index="lib_nav_language_label_en">EN</label>
+			<label index="lib_nav_language_label_de">DE</label>
+			<label index="lib_nav_language_label_km">KM</label>
+
+			<label index="flux.teaser">Custom: Teaser content elements</label>
+			<label index="flux.teaser.description">Teaser Contain: image, text and link</label>
+			<label index="flux.teaser.fields.image">Image</label>
+			<label index="flux.teaser.fields.header">Header text</label>
+			<label index="flux.teaser.fields.text">Body text</label>
+			<label index="flux.teaser.fields.linkLabel">Link label</label>
+			<label index="flux.teaser.fields.linkTarget">Link</label>
+			<label index="flux.googleMap">Custom: Google Map</label>
+			<label index="flux.googleMap.description">Google Map Contain: latitude and longitude, contact information</label>
+			<label index="flux.googleMap.fields.defaultZoomLevel">Default Zoom Level (Integer default = 8)</label>
+			<label index="flux.googleMap.fields.mapHieght">Map Height (Integer default = 400)</label>
+			<label index="flux.googleMap.fields.defaultMapCenter">Default Map Center</label>
+			<label index="flux.googleMap.fields.setCenterToFirstItem">Set Center To First Item</label>
+			<label index="flux.googleMap.objects.column.latitudeLongitude">Latitude and</label>
+			<label index="flux.googleMap.objects.column.zoomlevel">Zoom Level When click on marker</label>
+			<label index="flux.googleMap.objects.column.contact">Contact</label>
+		</languageKey>
+
+		<languageKey index="km" type="array">
+			<label index="powered_by">Web Essentials</label>
+			<label index="powered_by_link">http://www.web-essentials.asia/</label>
+			<label index="copyright_note">© ###START_YEAR###-###YEAR### Boxmodel. ដំណើរការដោយ  ###POWERED_BY###</label>
+			<label index="search">ស្វែងរក...</label>
+			<label index="sitetitle">Boxmodel</label>
+			<label index="home">ទំព័រដើម</label>
+			<label index="sitemap">Sitemap</label>
+			<label index="contact">Contact</label>
+			<label index="whats_new">What's new</label>
+			<label index="term_and_condition">Terms and Conditions</label>
+			<label index="fag">Frequently Asked Questions (FAQ)</label>
+			<label index="help">Help</label>
+			<label index="complaints_procedure">Complaints procedure</label>
+			<label index="access_key_details">Access key details</label>
+			<label index="skip_navigation">Skip Navigation</label>
+
+			<label index="page_meta_description">Web Essentials' Boxmodel for TYPO3 integration makes your live easier.</label>
+			<label index="page_meta_keywords">Boxmodel, Web Essentials</label>
+
+			<label index="lib_nav_language_label_en">EN</label>
+			<label index="lib_nav_language_label_de">DE</label>
+			<label index="lib_nav_language_label_km">KM</label>
+
+			<label index="flux.googleMap">Custom: ផែនទី​ Google</label>
+			<label index="flux.googleMap.description">ផែនទី Google: រយៈទទឹង និង រយៈបណ្ដោយ (latlng), ព័ត៌មានទូទៅ</label>
+			<label index="flux.googleMap.fields.defaultZoomLevel">កំរិតផែនទីបង្ហាញដំបូង (លេខគត់ ១ - ១៨​, default = 8)</label>
+			<label index="flux.googleMap.fields.mapHieght">ទទឹងនៃផែនទី (លេខគត់ default = 400)</label>
+			<label index="flux.googleMap.fields.defaultMapCenter">ចំនុចផ្ចិចនៃ ផែនទី ​(ទីតាំងកណ្ដាល)</label>
+			<label index="flux.googleMap.fields.setCenterToFirstItem">កំនត់ទីតាំងកណ្ដាល ដោយ អាស្រ័យដ្ឋានដំបូង</label>
+			<label index="flux.googleMap.objects.column.latitudeLongitude">រយៈទទឹង និង រយៈបណ្ដោយ</label>
+			<label index="flux.googleMap.objects.column.zoomlevel">កំរិតពង្រីកផែនទី នៅលើទីតាំង (Marker Zoom Level)</label>
+			<label index="flux.googleMap.objects.column.contact">ព័ត៌មានទំនាក់ទំនង</label>
+		</languageKey>
+
+		<languageKey index="de" type="array">
+		</languageKey>
+	</data>
+</T3locallang>

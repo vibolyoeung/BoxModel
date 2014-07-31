@@ -1,0 +1,7 @@
+## Override default loading of indexed_search
+config {
+	## even it is enabled but the frontend indexing is still disabled, Use crawler configuration
+	index_enable = 1
+	index_externals = 1
+	index_metatags = 1
+}

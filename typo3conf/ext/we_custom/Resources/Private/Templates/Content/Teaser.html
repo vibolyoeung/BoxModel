@@ -1,0 +1,55 @@
+{namespace flux=Tx_Flux_ViewHelpers}
+{namespace v=Tx_Vhs_ViewHelpers}
+<f:layout name="Content" />
+<div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:flux="http://fedext.net/ns/flux/ViewHelpers"
+     xmlns:v="http://fedext.net/ns/vhs/ViewHelpers"
+     xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+
+<f:section name="Configuration">
+	<flux:flexform wizardTab="Boxmodel" id="teaser" icon="{v:extension.path.resources(path: 'Images/Icons/teaser.png')}">
+		<flux:flexform.field.file name="image" />
+		<flux:flexform.field.input name="header" eval="trim,required"/>
+		<flux:flexform.field.text name="text" enableRichText="TRUE"/>
+		<flux:flexform.field.input name="linkLabel" eval="trim,required"/>
+		<flux:flexform.field.input name="linkTarget">
+			<flux:flexform.field.wizard.link />
+		</flux:flexform.field.input>
+	</flux:flexform>
+</f:section>
+
+<f:section name="Preview">
+	<strong>Image</strong>: {image}<br>
+	<strong>Text</strong>: {text}<br>
+	<strong>Link</strong>: {linkTarget}
+</f:section>
+
+<f:section name="Main">
+	<div class="text-center">
+		<f:if condition="{image}">
+			<figure>
+				<f:image src="{image}" alt="{image}" />
+			</figure>
+		</f:if>
+		<header>
+			<h3>{header}</h3>
+		</header>
+		<f:format.html>{text}</f:format.html>
+		<f:if condition="{linkTarget}">
+			<f:if condition="{linkTarget -> v:math.round()} > 0">
+				<f:then>
+					<f:link.page pageUid="{linkTarget}" class="btn btn-primary" rel="" title="{linkLabel}">
+						{linkLabel}
+					</f:link.page>
+				</f:then>
+				<f:else>
+					<a href="{linkTarget}" class="btn btn-default" rel="" title="{linkLabel}">
+						{linkLabel}
+					</a>
+				</f:else>
+			</f:if>
+		</f:if>
+	</div>
+</f:section>
+
+</div>

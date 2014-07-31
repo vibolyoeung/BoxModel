@@ -1,0 +1,7 @@
+plugin.tx_wecustom.view {
+	label = Fluid Content Elements - Web Essentials Custom Content Element
+	extensionKey = we_custom
+	templateRootPath = EXT:we_custom/Resources/Private/Templates/
+	partialRootPath = EXT:flux/Resources/Private/Partials/
+	layoutRootPath = EXT:fluidcontent/Resources/Private/Layouts/
+}

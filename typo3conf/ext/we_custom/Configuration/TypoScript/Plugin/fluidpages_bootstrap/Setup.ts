@@ -1,0 +1,1 @@
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:fluidcontent_bootstrap/Configuration/TypoScript/setup.txt"/>

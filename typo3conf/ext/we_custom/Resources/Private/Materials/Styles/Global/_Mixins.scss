@@ -1,0 +1,14 @@
+$tablet: "(max-width: #{$screen-sm-max})";
+$mobile: "(max-width: #{$screen-xs-max})";
+
+@mixin tablet() {
+	@media #{$tablet} {
+		@content;
+	}
+}
+
+@mixin mobile() {
+	@media #{$mobile} {
+		@content;
+	}
+}

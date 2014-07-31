@@ -1,0 +1,30 @@
+{namespace v=Tx_Vhs_ViewHelpers}
+{namespace flux=Tx_Flux_ViewHelpers}
+
+<f:layout name="Default"/>
+
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+     xmlns:v="http://fedext.net/ns/vhs/ViewHelpers"
+     xmlns:flux="http://fedext.net/ns/flux/ViewHelpers"
+     xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+<f:section name="Configuration">
+	<flux:flexform id="template-2column-8x4" label="2-Column Template (8x4)">
+	</flux:flexform>
+	<flux:flexform.grid>
+		<flux:flexform.grid.row>
+			<flux:flexform.grid.column colPos="0" name="Span 8" />
+			<flux:flexform.grid.column colPos="1" name="Span 4" />
+		</flux:flexform.grid.row>
+	</flux:flexform.grid>
+</f:section>
+
+<f:section name="Content">
+	<div class="row">
+		<div class="col-lg-8">
+			<v:page.content.render column="0"/>
+		</div>
+		<div class="col-lg-4 border-none">
+			<v:page.content.render column="1"/>
+		</div>
+	</div>
+</f:section>

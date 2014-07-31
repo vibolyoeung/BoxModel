@@ -1,0 +1,44 @@
+## Core TypoScript Adjustment
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:we_default/Configuration/TypoScript/Lib/Stdheader/Setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:we_default/Configuration/TypoScript/Lib/ParseFunc/Setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:we_default/Configuration/TypoScript/Lib/ParseFuncRTE/Setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:we_default/Configuration/TypoScript/Tt_content/Setup.ts">
+
+## Misc part1
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:we_default/Configuration/TypoScript/Lib/Misc/ProjectName/Setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:we_default/Configuration/TypoScript/Lib/Misc/Htmltitle/Setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:we_default/Configuration/TypoScript/Lib/Misc/Analytics/Setup.ts">
+
+## Page
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:we_default/Configuration/TypoScript/Page/Setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:we_default/Configuration/TypoScript/Page/CssJs/Setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:we_default/Configuration/TypoScript/Page/HeaderData/Setup.ts">
+
+## Including Default Configuration
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:we_default/Configuration/TypoScript/Config/Setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:we_default/Configuration/TypoScript/Config/BaseURL/Setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:we_default/Configuration/TypoScript/Config/Language/Setup.ts">
+
+## Plugins
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:we_default/Configuration/TypoScript/Plugin/fluidpages/Setup.ts">
+
+## Misc part2
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:we_default/Configuration/TypoScript/Lib/Misc/Logo/Setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:we_default/Configuration/TypoScript/Lib/Misc/Pagetitle/Setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:we_default/Configuration/TypoScript/Lib/Misc/Accessibility/Setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:we_default/Configuration/TypoScript/Lib/Misc/Searchbox/Setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:we_default/Configuration/TypoScript/Lib/Misc/Copyright/Setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:we_default/Configuration/TypoScript/Lib/Misc/Socialmedia/Setup.ts">
+
+## Navigations
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:we_default/Configuration/TypoScript/Lib/Nav/Breadcrumb/Setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:we_default/Configuration/TypoScript/Lib/Nav/Footer/Setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:we_default/Configuration/TypoScript/Lib/Nav/Language/Setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:we_default/Configuration/TypoScript/Lib/Nav/Main/Setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:we_default/Configuration/TypoScript/Lib/Nav/Right/Setup.ts">
+
+## Header
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:we_default/Configuration/TypoScript/Lib/Header/Setup.ts">
+
+## Footer
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:we_default/Configuration/TypoScript/Lib/Footer/Setup.ts">

@@ -1,0 +1,22 @@
+const.project.partial.name = boxmodel
+## URL
+const.project.url.local = http://www.local.{$const.project.partial.name}.wehost.asia
+const.project.url.dev = http://www.dev.{$const.project.partial.name}.wehost.asia
+const.project.url.latest = http://www.latest.{$const.project.partial.name}.wehost.asia
+const.project.url.staging = http://www.staging.{$const.project.partial.name}.wehost.asia
+const.project.url.demo = http://www.demo.{$const.project.partial.name}.wehost.asia
+
+## Page
+const.page.root = 1
+const.page.home = 2
+const.page.search = 7
+const.page.contact = 40
+
+## Storage page
+const.page.pid.meta = 4
+const.page.pid.footer = 5
+
+const.language.special.value = 0,1,2
+
+## General
+_lll = LLL:EXT:we_default/Resources/Private/Language/locallang.xml

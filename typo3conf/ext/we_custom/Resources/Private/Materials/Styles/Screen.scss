@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+// Global variables ONLY
+@import
+	"Global/Variables";
+
+// Bootstrap
+@import "bootstrap";
+
+// Project specific
+@import
+	"Global/Global",
+	"Components/Components",
+	"Layout/Layout";
+
+// Project theme
+@import "Jumbotron";

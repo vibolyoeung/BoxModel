@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<description>Language labels for Contact Form</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="label_fieldset">Contact Form</label>
+			<label index="name">Name</label>
+			<label index="email">E-Mail</label>
+			<label index="message">Your Message</label>
+			<label index="receive-copy">I want to receive a copy of this request</label>
+			<label index="submit">Send</label>
+
+			<label index="greetings">Dear</label>
+			<label index="email_user_subject">Your contact request</label>
+			<label index="email_user_text">We have received your request via the contact form on ###website_url### We will process your request and get in contact with you soon.</label>
+
+			<label index="email_admin_subject">Contact request</label>
+			<label index="email_admin_text">A user filled out the contact form on ###website_url###</label>
+
+			<label index="error_name_required">Please enter your name!</label>
+			<label index="error_email_required">Please enter your email address!</label>
+			<label index="error_email_email">Please enter a valid email address!</label>
+			<label index="error_message_required">Please enter a message!</label>
+
+			<label index="error_freecapfield_required">Please enter the Captcha!</label>
+			<label index="error_freecapfield_srFreecap">The entered value doesn't equal the generated Captcha code!</label>
+		</languageKey>
+		<languageKey index="km" type="array">
+			<label index="label_fieldset">ទំរង់ស្នើរ</label>
+			<label index="name">ឈ្មោះ</label>
+			<label index="email">អ៊ីម៉ែល</label>
+			<label index="message">មតិ</label>
+			<label index="receive-copy">ផ្ញើរទំរង់នេះមកខ្ញុំ​មួយច្បាប់</label>
+			<label index="submit">ផ្ញើរ</label>
+	
+			<label index="greetings">ជូនចំពោះ</label>
+			<label index="email_user_subject">ទំរង់ស្នើររបស់ឣ្នក</label>
+			<label index="email_user_text">យើងបានទទួលការស្នើរសុំរបស់ឣ្នក តាមរយៈ ទំរង់ស្នើរ នៅលើគេហទំព័រ ###website_url### ។ យើងនឹងស្នើរលើសំណើរនេះ​ និង ទាក់ទងនៅឣ្នកក្នុងពេលឆាប់ៗ ​​។</label>
+
+			<label index="email_admin_subject">ទំរង់ស្នើរ​</label>
+			<label index="email_admin_text">ឣ្នកប្រើប្រាស់ម្នាក់បានបំពេញទំរង់ស្នើរនៅលើគេហទំព័រ​ ###website_url### ។</label>
+
+			<label index="error_name_required">សូម​បំពេញឈ្មោះ​របស់ឣ្នក!</label>
+			<label index="error_email_required">សូមបំពេញ ឣុីម៉ែលរបស់ឣ្នក!</label>
+			<label index="error_email_email">សូមបំពេញ ឣុីម៉ែលដែលត្រឹមត្រូវ!</label>
+			<label index="error_message_required">សូមបំពេញ សារ!</label>
+
+			<label index="error_freecapfield_required">សូមបំពេញ Captcha!</label>
+			<label index="error_freecapfield_srFreecap">ការបំពេញមិនបានត្រឹមត្រូវនឹង ពាក្យរបស់ Captcha!</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="label_fieldset">Kontaktformular</label>
+			<label index="name">Name</label>
+			<label index="email">E-Mail</label>
+			<label index="message">Ihre Nachricht:</label>
+			<label index="receive-copy">Ich möchte eine Kopie dieser Anfrage erhalten</label>
+			<label index="submit">Send</label>
+
+			<label index="greetings">Liebe</label>
+			<label index="email_user_subject">Ihre Kontaktanfrage</label>
+			<label index="email_user_text">Wir haben Ihre Anfrage über das Kontaktformular auf ###website_url### erhalten. Wir werden Ihre Anfrage bearbeiten und in Kontakt mit Ihnen bald.</label>
+
+			<label index="email_admin_subject">Contact request</label>
+			<label index="email_admin_text">A user filled out the contact form on ###website_url###</label>
+
+			<label index="error_name_required">Bitte geben Sie Ihren Namen!</label>
+			<label index="error_email_required">Bitte geben Sie Ihre E-Mail!</label>
+			<label index="error_email_email">Geben Sie eine gültige E-mail!</label>
+			<label index="error_message_required">Bitte geben Sie eine Nachricht!</label>
+
+			<label index="error_freecapfield_required">Bitte geben Sie Captcha!</label>
+			<label index="error_freecapfield_srFreecap">Der eingegebene Wert nicht mit dem generierten Sicherheitscode gleich!</label>
+		</languageKey>
+	</data>
+</T3locallang>

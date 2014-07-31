@@ -1,0 +1,23 @@
+{
+	"name": "we_customer",
+	"version": "1.0.0",
+	"description": "Web-essentials The customer package",
+	"main": "?",
+	"moduleType": [
+		"globals"
+	],
+	"authors": [
+		"Web-essentials <info@web-essentials.asia>"
+	],
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	],
+	"dependencies": {
+		"jquery": "2.1.1",
+		"bootstrap-sass-twbs": "3.1.1"
+	}
+}

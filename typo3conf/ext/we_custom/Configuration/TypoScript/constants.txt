@@ -1,0 +1,109 @@
+## Include plugin constants
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:fluidcontent_bootstrap/Configuration/TypoScript/constants.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:tq_seo/Configuration/TypoScript/constants.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:t3colorbox/Configuration/TypoScript/constants.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:news/Configuration/TypoScript/constants.txt">
+
+## Project
+const.project.url.live = http://www.boxmodel.wehost.asia/
+const.project.partial.name = boxmodel
+const.project.email.admin_email_to = webmaster@web-essentials.asia
+const.project.email.admin_email_from = helpdesk@web-essentials.asia
+const.project.start_year = 2009
+
+## HTML Comment in <HEAD>  -- placed here by intend
+const.headerComment = TYPO3 integration by Web Essentials - Redefining Web Development - http://www.web-essentials.asia/
+
+## Path
+const.path.resource.private = EXT:we_custom/Resources/Private/
+const.path.resource.public = EXT:we_custom/Resources/Public/
+const.path.resource.plugin = {$const.path.resource.private}Templates/Plugin/
+const.path.resource.css = {$const.path.resource.public}Css/
+const.path.resource.javascript = {$const.path.resource.public}JavaScript/
+const.path.fluidpages.templateRootPath = {$const.path.resource.private}Templates/
+const.path.fluidpages.partialRootPath = {$const.path.resource.private}Partials/
+const.path.fluidpages.layoutRootPath = {$const.path.resource.private}Layouts/
+
+## Google Analytics
+const.analytics.account = UA-XXXXX-X
+
+## Social Media
+const.socialmedia.link.facebook = https://www.facebook.com/WebEssentialsAsia
+const.socialmedia.link.twitter = https://twitter.com/w3essentials
+const.socialmedia.link.linkedin = https://linkedin.com/company/web-essentials‎
+
+## Page
+const.page.news = 64
+
+## CSS Styles Content
+styles.content.links.allowTags := addToList(abbr, acronym)
+styles.content.imgtext.maxW = 1170
+
+## General
+lll = LLL:EXT:we_custom/Resources/Private/Language/locallang.xml
+
+##  t3Colorbox constants
+plugin.t3colorbox.includejquerycore = 0
+
+## Custom News constants
+plugin.tx_news.settings.detailPid =
+
+
+plugin.tx_news {
+	view {
+		templateRootPath = {$const.path.resource.plugin}news/Templates/
+		partialRootPath = {$const.path.resource.plugin}news/Partials/
+	}
+	settings {
+		detail {
+			showSocialShareButtons = 0
+			media {
+				image {
+					notFirstImage {
+						width = 84c
+						height = 84c
+					}
+				}
+			}
+		}
+	}
+}
+
+## Custom Formhandler constants
+formhandler.contact-form {
+	email.user.sender_email = 
+	email.admin.sender_email = 
+	email.admin.to_email = 
+	redirectPage = 
+	threshold = 4
+	spamRedirectPage = 42
+}
+
+plugin.formhandler_subscription {
+	rootPath = {$const.path.resource.plugin}formhandler_subscription/
+	languagePath = typo3conf/ext/we_custom/Resources/Private/Language/
+	subscribersTable = tt_address
+	subscriberRecordsPID = 34
+	subscriberRecordsRecursive = 0
+	newSubscriberRecordsPID = 34
+	requestSubscriptionSuccessPID = 57
+	confirmSubscriptionPID = 58
+	requestUpdateSuccessPID = 
+	updateSubscriptionFormPID =
+	updateSubscriptionSuccessPID =
+	removeSubscriptionSuccessPID =
+	authCodeInvalidPID = 59
+	emailSenderAddress = noreply@web-essentials.asia
+	emailSenderName = Web Essentials
+	globalLanguageFile = EXT:formhandler_subscription/Resources/Language/Global.xml
+	templatePath = EXT:formhandler_subscription/Resources/Templates
+	generateTinyUrls = 0
+}
+
+## tx_directmail configuration. 
+plugin.tx_directmail_pi1 {
+	siteUrl = http://www.web-essentials.asia/
+	flowedFormat = 0
+	doubleLF = 0
+	removeSplitChar =
+}

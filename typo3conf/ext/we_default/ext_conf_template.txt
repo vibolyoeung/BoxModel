@@ -1,0 +1,35 @@
+# cat=basic/enable/010; type=boolean; label=Enable Developer Mode
+enableDeveloperMode = 0
+
+# cat=basic/enable/020; type=boolean; label=Enable Default Page TSConfig
+enableDefaultPageTSconfig = 1
+
+# cat=basic/enable/030; type=boolean; label=Enable Default User TSConfig
+enableDefaultUserTSconfig = 1
+
+# cat=basic/enable/040; type=boolean; label=Enable Minimized RTE
+enableMinimizedRTE = 1
+
+# cat=basic/enable/050;  type=boolean; label= Disable TS Template Editing: Completely disable TypoScript editing and constants editor
+disableTsTemplateEditing = 1
+
+# cat=basic/enable/060; type=boolean; label=Don't Compress CSS
+dontCompressCss = 0
+
+# cat=basic/enable/070; type=boolean; label=Don't Compress JS
+dontCompressJs = 0
+
+# cat=basic/enable/080; type=boolean; label=Don't Concatenate CSS
+dontConcatenateCss = 0
+
+# cat=basic/enable/090; type=boolean; label=Don't Concatenate JS
+dontConcatenateJs = 0
+
+# cat=basic/enable/0100; type=boolean; label=Don't Move Js From Header To Footer
+dontMoveJsFromHeaderToFooter = 0
+
+# cat=basic/others/0110;  type=options[true,1,2,3,4,5,6,7,8,9]; label=BE Compression Level : Range 1-9, where 1 is least compression and 9 is greatest compression. 'true' as value will set the compression based on the PHP default settings (usually 5).
+beCompressionLevel = 9
+
+# cat=basic/others/0120;  type=options[true,1,2,3,4,5,6,7,8,9]; label=FE Compression Level : Range 1-9, where 1 is least compression and 9 is greatest compression. 'true' as value will set the compression based on the PHP default settings (usually 5).
+feCompressionLevel = 9

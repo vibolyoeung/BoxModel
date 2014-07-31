@@ -1,0 +1,4 @@
+## deny access to the following extenstions
+<FilesMatch "\.(ts|txt|xml)$" >
+	deny from all
+</FilesMatch>
