@@ -1,0 +1,121 @@
+{namespace flux=FluidTYPO3\Flux\ViewHelpers}
+{namespace v=Tx_Vhs_ViewHelpers}
+<f:layout name="Content" />
+<div xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:flux="http://fedext.net/ns/flux/ViewHelpers"
+	xmlns:v="http://fedext.net/ns/vhs/ViewHelpers"
+	xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+
+	<f:section name="Configuration">
+		<flux:form wizardTab="Boxmodel" id="slideshow" icon="{v:extension.path.resources(path: 'Images/Icons/icon-slideshow.png')}">
+			<flux:field.input name="settings.carousel.interval" default="5000" eval="int,trim" />
+			<flux:field.select name="settings.carousel.animation" items="{slide: 'Slide', cycle: 'Cycle', Fade: 'Fade'}" />
+			<flux:field.select name="settings.carousel.type" items="{basic: 'Basic slideshow with cycle indicator', thubmails: 'Slideshow with indicator as image thumbnails'}" />
+			<flux:field.checkbox name="settings.carousel.showarrow" default="1" />
+			<flux:field.checkbox name="settings.carousel.showindicator" default="1" />
+			<flux:field.checkbox name="settings.carousel.autostart" default="1" />
+			<flux:grid>
+				<f:for each="{elements}" as="element" iteration="iteration">
+					<f:for each="{element}" key="elementType" as="elementData">
+						<f:if condition="{0: elementType} == {0: 'content'}">
+							<flux:grid.row>
+								<flux:grid.column>
+									<flux:form.content name="{elementData.id}" label="Content: {elementData.id}" />
+								</flux:grid.column>
+							</flux:grid.row>
+						</f:if>
+					</f:for>
+				</f:for>
+			</flux:grid>
+			<flux:form.sheet name="elements">
+				<flux:form.section name="elements">
+					<flux:form.object name="slide">
+						<flux:field.file name="file" allowed="jpg,png,gif" maxItems="1" showThumbnails="1"
+							required="1"/>
+						<flux:field.input name="header" />
+						<flux:field.text name="caption" enableRichText="TRUE" />
+					</flux:form.object>
+				</flux:form.section>
+			</flux:form.sheet>
+		</flux:form>
+	</f:section>
+
+	<f:section name="Preview">
+		<f:for each="{elements}" as="item">
+			<f:if condition="{item.slide.file}">
+				<img src="../../../{f:uri.image(src: '{item.slide.file}', maxWidth: '64', maxHeight: '64')}" alt="" />
+			</f:if>
+		</f:for>
+		<p>Elements: {elements -> f:count()}</p>
+		<flux:widget.grid />
+	</f:section>
+
+	<f:section name="Main">
+		<div id="myCarousel" class="carousel slide" data-interval="{settings.carousel.interval}"{f:if(condition: settings.carousel.autostart, then: ' data-ride="carousel"')}>
+			<div class="carousel-inner">
+				<f:for each="{elements}" as="element" iteration="iteration">
+					<div class="item{f:if(condition: iteration.isFirst, then: ' active')}">
+						<f:for each="{element}" key="elementType" as="elementData">
+							<f:render section="Image" arguments="{_all}" />
+							<f:if condition="{0: elementData.caption, 1: elementData.header} != {0: '', 1: ''}">
+								<div class="container">
+									<div class="carousel-caption">
+										<f:if condition="{0: elementData.header} != {0: ''}">
+											<h3>{elementData.header}</h3>
+										</f:if>
+										<f:if condition="{0: elementData.caption} != {0: ''}">
+											<p class="hidden-xs">{elementData.caption -> f:format.crop(maxCharacters:
+												243, append: '')}<p>
+											<p class="hidden-md hidden-sm hidden-lg">{elementData.caption ->
+											f:format.crop(maxCharacters: 125, append: '')}</p>
+										</f:if>
+										<f:if condition="{elements -> f:count()} > 1">
+											<f:then>
+												<f:render section="Controlmd" arguments="{_all}" />
+											</f:then>
+										</f:if>
+									</div>
+								</div>
+							</f:if>
+						</f:for>
+					</div>
+				</f:for>
+			</div>
+			<div class="container">
+				<ol class="carousel-indicators hidden-xs">
+					<f:for each="{elements}" as="image" iteration="iteration">
+						<f:if condition="{elements -> f:count()} > 1">
+							<f:then>
+								<li data-target="#myCarousel" data-slide-to="{iteration.index}" class="{f:if(condition: iteration.isFirst, then: 'active')}"></li>
+							</f:then>
+						</f:if>
+					</f:for>
+				</ol>
+			</div>
+			<f:if condition="{elements -> f:count()} > 1">
+				<f:then>
+					<f:render section="Controlxs" arguments="{_all}" />
+				</f:then>
+			</f:if>
+		</div>
+	</f:section>
+
+<f:section name="Image">
+	<f:image src="{elementData.file}" alt="{elementData.header}" width="1919px" />
+</f:section>
+
+<f:section name="Controlmd">
+	<a class="carousel-control left hidden-xs" href="#myCarousel" data-slide="prev"><span
+		class="glyphicon glyphicon-circle-arrow-left"></span></a>
+	<a class="carousel-control right hidden-xs" href="#myCarousel" data-slide="next"><span
+		class="glyphicon glyphicon-circle-arrow-right"></span></a>
+</f:section>
+
+<f:section name="Controlxs">
+	<a class="carousel-control left hidden-md hidden-sm hidden-lg" href="#myCarousel"
+		data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+	<a class="carousel-control right hidden-md hidden-sm hidden-lg" href="#myCarousel"
+		data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+</f:section>
+
+</div>

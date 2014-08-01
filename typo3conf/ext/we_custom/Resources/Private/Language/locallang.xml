@@ -24,6 +24,24 @@
 			<label index="flux.teaser.fields.text">Description</label>
 			<label index="flux.teaser.fields.linkLabel">Link Label</label>
 			<label index="flux.teaser.fields.linkTarget">Link Target</label>
+
+			<label index="flux.slideshow">Boxmodel: Slideshow</label>
+			<label index="flux.slideshow.description">Create slideshow images with simple caption in a carousel matrix with JavaScript based slide change.</label>
+			<label index="flux.slideshow.fields.settings.carousel.interval">Interval between image changes, in miliseconds (default: 5000)</label>
+			<label index="flux.slideshow.fields.settings.carousel.autostart">Auto start</label>
+			<label index="flux.slideshow.fields.settings.carousel.showarrow">Show Control Arrow</label>
+			<label index="flux.slideshow.fields.settings.carousel.showindicator">Show Indicator</label>
+			<label index="flux.slideshow.fields.settings.carousel.animation">Animation Type</label>
+			<label index="flux.slideshow.fields.settings.carousel.animation.slide">slide</label>
+			<label index="flux.slideshow.fields.settings.carousel.animation.cycle">Cycle</label>
+			<label index="flux.slideshow.fields.settings.carousel.animation.fade">Fade</label>
+			<label index="flux.slideshow.fields.settings.carousel.type">Slideshow Type</label>
+			<label index="flux.slideshow.sheets.elements">Elements</label>
+			<label index="flux.slideshow.objects.slide">Slide item</label>
+			<label index="flux.slideshow.objects.slide.file">Image</label>
+			<label index="flux.slideshow.objects.slide.header">Caption header (Optional)</label>
+			<label index="flux.slideshow.objects.slide.caption">Caption body (Optional)</label>
+
 		</languageKey>
 
 		<languageKey index="km" type="array">
